@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+        <div class="col" *ngIf="!showLogin">
+            <form #userSignUp="ngForm" (ngSubmit)="UserSignUp(userSignUp.value)">
+                <h1>User SignUp</h1>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Name </label>
+                    <input type="email" class="form-control" id="name" aria-describedby="emailHelp" 
+                    placeholder="Enter Your name" name="name" ngModel>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Your Email" name="email" ngModel>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                    name="password" ngModel placeholder="Enter Your password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <p><a (click)="showLogins()" >Do you have accout ? Login here</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" *ngIf="showLogin">
+            <form #userlogin="ngForm" (ngSubmit)="UserLogIn(userlogin.value)">
+                <h1>User LogIn</h1>
+                <p>{{loginFailMessage}}</p>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Your Email" name="email" ngModel
+                    #email="ngModel"
+                    email
+                    required
+                    >
+                    <p class="mt-2 text-danger"><span *ngIf="email.invalid && email.touched">Please enter valid value</span></p>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                    name="password" ngModel placeholder="Enter Your password"
+                    #password="ngModel"
+                    minlength="2"
+                    maxlength="6"
+                    required>
+                    <p class="mt-2 text-danger"><span *ngIf="password.invalid && password.touched">Please enter valid value</span></p>
+
+                </div>
+                <button [disabled]="userlogin.invalid" type="submit" class="btn btn-primary">Submit</button>
+                <p><a (click)="showRegister()" >Do you dont have accout ? please register here</a></p>
+
+            </form>
+        </div>
+    </div>
+</div>

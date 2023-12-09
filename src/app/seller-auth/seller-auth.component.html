@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row" *ngIf="!showLogin">
+    <div class="col">
+      <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" style="width: 40%; margin: 0 auto;"
+        class="mt-5">
+        <h1>Seller SignUp</h1>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <input type="email" class="form-control" ngModel name="name" id="exampleInputEmail1"
+            placeholder="Enter Your name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email Addrress</label>
+          <input type="email" class="form-control" ngModel name="email" id="exampleInputEmail1"
+            placeholder="Enter Your Email">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" ngModel name="password" id="exampleInputPassword1"
+            placeholder="Enter Your password">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <a class="toggleLink" (click)="openLogin()" >Already have account? click to Login</a>
+      </form>
+    </div>
+  </div>
+
+  <!-- Login seller -->
+  <div class="row" *ngIf="showLogin">
+    <div class="col">
+      <form #sellerLogin="ngForm" (ngSubmit)="Login(sellerLogin.value)" 
+       style="width: 40%; margin: 0 auto;"
+        class="mt-5">
+        <h1>Seller Login</h1>
+        <p style="color: red;">{{authError}}</p>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email Addrress</label>
+          <input type="email" class="form-control" ngModel name="email" id="exampleInputEmail1"
+            placeholder="Enter Your Email">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" ngModel name="password" id="exampleInputPassword1"
+            placeholder="Enter Your password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <a class="toggleLink" (click)="openSignUp()" >Already have account? click to Sign Up</a>
+
+      </form>
+    </div>
+  </div>
+</div>

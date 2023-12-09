@@ -1,0 +1,31 @@
+<div class="container checkout">
+    <div class="row">
+        <h1 class="text-center mt-3">Checkout</h1>
+        <p class="color-success text-center">{{orderMessage}}</p>
+        <div class="col-sm-7">
+            <form class="mt-5" #orderData="ngForm" (ngSubmit)="OrderDatas(orderData.value)">
+                <h1>Add Shipping address</h1>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Your Email" name="email" ngModel>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"> address</label>
+                    <input type="text" class="form-control" id="address" aria-describedby="emailHelp"
+                    placeholder="Enter Your address" name="address" ngModel>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">contact</label>
+                    <input type="number" class="form-control" id="Number" aria-describedby="emailHelp"
+                    placeholder="Enter Your Number" name="number" ngModel>
+                </div>
+                <button  class="btn btn-primary">Order Now</button>
+            </form>
+        </div>
+        <div class="col-sm-5 mt-5">
+            <h3>Total Amount : {{totalPrice}}</h3>
+            <h4>Payment Method : <b>Pay on Delivary</b></h4>
+        </div>
+    </div>
+</div>

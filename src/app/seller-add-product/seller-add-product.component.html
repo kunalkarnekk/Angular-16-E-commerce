@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form #addproduct="ngForm" (ngSubmit)="addProduct(addproduct.value)" style="width: 40%; margin: 0 auto;" class="mt-5">
+                <h1  >Add new product</h1>
+                <p style="color: red;">{{addProductMessage}}</p>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                     placeholder="Enter Product Name"
+                     ngModel
+                     name="name"
+                     >
+                    
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter Product Price"
+                    ngModel
+                    name="price"
+                    >
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter Product color"
+                    ngModel
+                    name="color"
+                    >
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter Product category"
+                    ngModel
+                    name="category"
+                    >
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Enter Product description"
+                    ngModel
+                    name="description"
+                    ></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter Product image URL"
+                    ngModel
+                    name="image"
+                    >
+                </div>
+                <button type="submit" class="btn btn-primary">Add Product</button>
+            </form>
+        </div>
+    </div>
+</div>

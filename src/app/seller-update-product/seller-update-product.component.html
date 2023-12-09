@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form #updateproduct="ngForm" (ngSubmit)="updateProducts(updateproduct.value)" style="width: 40%; margin: 0 auto;" class="mt-5">
+                <h1  >Update new product</h1>
+                <p style="color: green;">{{updateProductMessage}}</p>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                     placeholder="Enter Product Name"
+                     ngModel="{{productData?.name}}"
+                     name="name"
+                     >
+                    
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter Product Price"
+                    ngModel="{{productData?.price}}"
+                    name="price"
+                    >
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter Product color"
+                    ngModel="{{productData?.color}}"
+                    name="color"
+                    >
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter Product category"
+                    ngModel="{{productData?.category}}"
+                    name="category"
+                    >
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Enter Product description"
+                    ngModel="{{productData?.description}}"
+                    name="description"
+                    ></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleInputPassword1"
+                    placeholder="Enter Product image URL"
+                    ngModel="{{productData?.image}}"
+                    name="image"
+                    >
+                </div>
+                <button type="submit" class="btn btn-primary">Update Product</button>
+            </form>
+        </div>
+    </div>
+</div>

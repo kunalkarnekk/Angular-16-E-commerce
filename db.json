@@ -1,0 +1,115 @@
+{
+  "Seller": [
+    {
+      "name": "mr.kk",
+      "email": "kk@gmail.com",
+      "password": "12345",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "APPLE iPhone 12",
+      "price": "44999",
+      "color": "blue",
+      "category": "mobaile",
+      "description": "APPLE iPhone 12 (Blue, 64 GB)",
+      "image": "https://rukminim2.flixcart.com/image/416/416/kg8avm80/mobile/y/7/n/apple-iphone-12-dummyapplefsn-original-imafwg8dpyjvgg3j.jpeg?q=70",
+      "id": 1
+    },
+    {
+      "name": "SAMSUNG Galaxy F13",
+      "price": "9999",
+      "color": "black",
+      "category": "mobile",
+      "description": "SAMSUNG Galaxy F13 (Waterfall Blue, 64 GB)  (4 GB RAM)",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/l/l/-original-imagueeyshyqzbfh.jpeg?q=70",
+      "id": 2
+    },
+    {
+      "name": "keyboed",
+      "price": "999",
+      "color": "black",
+      "category": "keybord",
+      "description": "RPM Euro Games Gaming Keyboard and Mouse Combo | Keyboard - With 7 Color Backlit | Suspension Caps | Backlit | 104 Keys | Mouse - Upto 3200 DPI, 4 Levels|6 Buttons | 7 Color RGB Wired USB Gaming Keyboard (Black) Wired USB Gaming Keyboard  (Black)",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/keyboard/gaming-keyboard/r/g/v/gaming-keyboard-and-mouse-combo-keyboard-with-7-color-backlit-original-imaggjk5ahg9jzny.jpeg?q=70",
+      "id": 3
+    },
+    {
+      "name": "shirt",
+      "price": "399",
+      "color": "white",
+      "category": "shirt",
+      "description": "Men regular fit shirt",
+      "image": "https://rukminim2.flixcart.com/image/832/832/l41n2q80/shirt/r/d/q/l-02-trend-transfit-big-ck-trend-transfit-original-imagfyzmtnreemay.jpeg?q=70",
+      "id": 4
+    },
+    {
+      "name": "shirt",
+      "price": "399",
+      "color": "white",
+      "category": "shirt",
+      "description": "Men regular fit shirt",
+      "image": "https://rukminim2.flixcart.com/image/832/832/l41n2q80/shirt/r/d/q/l-02-trend-transfit-big-ck-trend-transfit-original-imagfyzmtnreemay.jpeg?q=70",
+      "id": 5
+    },
+    {
+      "name": "shirt",
+      "price": "399",
+      "color": "white",
+      "category": "shirt",
+      "description": "Men regular fit shirt",
+      "image": "https://rukminim2.flixcart.com/image/832/832/l41n2q80/shirt/r/d/q/l-02-trend-transfit-big-ck-trend-transfit-original-imagfyzmtnreemay.jpeg?q=70",
+      "id": 6
+    },
+    {
+      "name": "shirt",
+      "price": "399",
+      "color": "white",
+      "category": "shirt",
+      "description": "Men regular fit shirt",
+      "image": "https://rukminim2.flixcart.com/image/832/832/l41n2q80/shirt/r/d/q/l-02-trend-transfit-big-ck-trend-transfit-original-imagfyzmtnreemay.jpeg?q=70",
+      "id": 7
+    },
+    {
+      "name": "shirt",
+      "price": "399",
+      "color": "white",
+      "category": "shirt",
+      "description": "Men regular fit shirt",
+      "image": "https://rukminim2.flixcart.com/image/832/832/l41n2q80/shirt/r/d/q/l-02-trend-transfit-big-ck-trend-transfit-original-imagfyzmtnreemay.jpeg?q=70",
+      "id": 8
+    },
+    {
+      "name": "shirt",
+      "price": "399",
+      "color": "white",
+      "category": "shirt",
+      "description": "Men regular fit shirt",
+      "image": "https://rukminim2.flixcart.com/image/832/832/l41n2q80/shirt/r/d/q/l-02-trend-transfit-big-ck-trend-transfit-original-imagfyzmtnreemay.jpeg?q=70",
+      "id": 9
+    }
+  ],
+  "Users": [
+    {
+      "name": "kunal",
+      "email": "kunal@user.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "xyz",
+      "email": "hsdhshds12@gmail.com",
+      "password": "123456789Yash",
+      "id": 2
+    },
+    {
+      "name": "dsdi",
+      "email": "yashuyAgmail.com",
+      "password": "hdhsdhshdhd",
+      "id": 3
+    }
+  ],
+  "cart": [],
+  "orders": []
+}

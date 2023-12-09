@@ -1,0 +1,26 @@
+.navbar{
+    background-color: aquamarine;
+}
+
+.suggResult{
+    position: absolute;
+    display: list-item !important;
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    top: 40px;
+    border: 1px solid #ddd;
+    margin-top: 8px;
+    border-radius: 3px;
+    width: 21.7%;
+}
+
+.suggResult li {
+    border: 1px solid #fff;
+    padding: 5px;
+    list-style: none;
+}
+
+.suggResult li a {
+    cursor: pointer;
+}

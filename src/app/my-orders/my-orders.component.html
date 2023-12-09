@@ -1,0 +1,50 @@
+<div class="container my-orders">
+    <h1 class="mt-5 text-center">My Orders</h1>
+    <div class="row">
+        <div class="col-sm-2 mt- mb-5">
+            <span>Order</span>
+        </div>
+
+        <div class="col-sm-2 mt-2">
+            <span>Order Id</span>
+        </div>
+
+        <div class="col-sm-2 mt-2">
+            <span>Price</span>
+        </div>
+
+        <div class="col-sm-2 mt-2">
+            <span>Status</span>
+        </div>
+
+        <div class="col-sm-2 mt-2">
+            <span>Cancle Order</span>
+        </div>
+
+
+    </div>
+
+    <div class="row order-data" *ngFor="let order of orderData">
+        <div class="col-sm-2 mt-2">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+
+        <div class=" col-sm-2 mt-2">
+            <span>#{{order.id}}</span>
+        </div>
+
+        <div class="col-sm-2 mt-2">
+            <span>{{order.totalPrice}}</span>
+        </div>
+
+        <div class="col-sm-2 mt-2">
+            <span>In progress</span>
+        </div>
+
+        <div class="col-sm-2 mt-2">
+            <span><button class="btn btn-primary" (click)="cancleOrder(order.id)">Cancel Order</button></span>
+        </div>
+
+
+    </div>
+</div>

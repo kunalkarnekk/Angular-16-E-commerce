@@ -1,0 +1,11 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.order-data{
+    margin-top: 10px;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
